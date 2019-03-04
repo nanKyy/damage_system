@@ -24,7 +24,7 @@ outputDebugString('Zostało zmienionych '..#damages..' wartości damage.')
 addEventHandler('onPlayerDamage',root,function(player, weapon, part, loss)
 	if weapon == 49 then return end
 
-	for index,value in pairs(damages) do
+	for index, value in pairs(damages) do
 		if value[1] == weapon then
 			local damage = giveDamage(source,value[2])
 
